@@ -1,9 +1,12 @@
+import Header from './Header';
+import './index.scss';
+
 const HomePage = () => {
 
   return (
-    <div>
-      <p>홈</p>
-      <button>버튼</button>
+    <div className="homepage">
+      <Header />
+      <div className="homepage-container" />
     </div>
   );
 };

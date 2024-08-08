@@ -1,0 +1,16 @@
+@import 'styles/_variables.scss';
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  height: 60px;
+  padding: 0 20px;
+  background-color: transparent;
+
+  &-box {
+    display: flex;
+    gap: 30px;
+    color: $point-color;
+  }
+}
