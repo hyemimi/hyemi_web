@@ -1,17 +1,10 @@
 import React from 'react';
-import './App.css';
+import RootRoutes from 'routes/RootRoutes';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-      <div>
-        <p>portfolio</p>
-      </div>
-    </div>
+    <RootRoutes />
   );
-}
+};
 
 export default App;

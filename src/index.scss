@@ -1,0 +1,42 @@
+@import 'styles/_reset.scss';
+@import 'styles/_font.scss';
+@import 'styles/_variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: Pretendard-SemiBold, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+button {
+  padding: 10px 20px;
+  color: $white;
+  cursor: pointer;
+  background-color: $point-color;
+  border: none;
+  
+  &:hover {
+    background-color: $point-hover-color;
+  }
+  
+  &:active {
+    background-color: $point-active-color; /* 클릭 시 가장 어두운 블루 */
+  }
+}
