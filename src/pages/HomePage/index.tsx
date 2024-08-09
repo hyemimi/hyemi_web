@@ -1,11 +1,17 @@
 import './index.scss';
+import profileImage from 'assets/images/hyemi.png';
 
 const HomePage = () => {
 
   return (
     <div className="homepage-container">
-      <div style={{ margin: '0 auto' }}>
-        <p> 홈 페이지 </p>
+      <div className="profile">
+        <img src={profileImage} />
+        <div>
+          <p className="profile-developer">Frontend Developer</p>
+          <h1 className="profile-name">이혜미</h1>
+          <p>I am interested in _____ </p>
+        </div>
       </div>
     </div>
 

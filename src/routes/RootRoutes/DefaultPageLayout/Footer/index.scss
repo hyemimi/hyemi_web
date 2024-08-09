@@ -1,11 +1,15 @@
 
 
 .footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
   height: 80px;
   padding: 20px;
-  background-color: #fff;
+  border-top: 1px solid rgb(89, 89, 89);
+
 }
 
 .footer-description {
-  font-family: Pretendard-SemiBold, sans-serif;
+  color: #fff;
 }

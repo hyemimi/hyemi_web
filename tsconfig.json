@@ -26,6 +26,7 @@
         "styles/*": ["styles/*"],
 	      //"apis/*": ["apis/*"],
 	      "assets/*": ["assets/*"],
+        "assets/images/*": ["assets/images/*"],
 	      "components/*": ["components/*"],
 	      //"layouts/*": ["layouts/*"],
 	      "pages/*": ["pages/*"],

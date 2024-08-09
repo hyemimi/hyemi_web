@@ -4,12 +4,11 @@ const Header = () => {
 
   return (
     <nav className="header">
-      <p>Portfolio</p>
       <ul className="header-item">
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li className="header-item-list">Home</li>
+        <li className="header-item-list">About Me</li>
+        <li className="header-item-list">Projects</li>
+        <li className="header-item-list">Contact</li>
       </ul>
     </nav>
   );

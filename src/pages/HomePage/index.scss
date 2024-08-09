@@ -3,10 +3,28 @@
 
 .homepage {
   &-container {
-    align-items: center;
-    height: 100vh;
-    padding-top: 60px;
-    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 80px);
     color: $white;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+
+  &-name {
+    font-family: Pretendard-Bold, sans-serif;
+    font-size: 30px;
+  }
+
+  &-developer {
+    color: #f39034;
   }
 }
