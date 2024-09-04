@@ -1,4 +1,6 @@
-@import 'styles/_variables.scss';
+@import 'styles/variables.scss';
+
+/** header */
 
 .header {
   position: fixed;
@@ -22,7 +24,6 @@
       &:hover {
         color: $point-hover-color;
       }
-
     }
   }
 }
