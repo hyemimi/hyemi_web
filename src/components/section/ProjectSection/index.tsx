@@ -25,7 +25,7 @@ const ProjectSection = () => {
             opacity: 1,y: 0,
             transition: { type: 'spring', duration: 0.5 } } }      
           viewport={{ once: false }}>
-          <img className="project-container-wrapper-image" src={item.src} />
+          <img className="project-container-wrapper-image" src={item.src} width={324} height={192} />
         </motion.div>
       )}
 
