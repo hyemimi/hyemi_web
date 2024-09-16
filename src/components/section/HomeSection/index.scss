@@ -1,0 +1,45 @@
+.profile {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+
+  &-image {
+    background-size: cover;
+  }
+  
+  &-name {
+    font-family: Pretendard-Bold, sans-serif;
+    font-size: 50px;
+  }
+  
+  &-developer {
+    color: #fff;
+  }
+
+  &-text {
+    font-size: 30px;
+    color: #f39034;
+    
+  }
+
+  &-contact-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.sliding-text {
+  width: 100%;
+  color: #fff;
+  white-space: nowrap;  
+}
+
+.slider-text {
+  font-size: 100px;
+  
+}

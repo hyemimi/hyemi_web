@@ -7,8 +7,15 @@ html {
 
 section {
   height: 100vh;
+  overflow: hidden;
   scroll-snap-align: center;
 }
+
+#projects {
+  height: 100%;
+}
+
+
 
 * {
   box-sizing: border-box;

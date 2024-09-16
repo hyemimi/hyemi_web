@@ -5,6 +5,13 @@ import { useEffect } from 'react';
 const Header = () => {
   const navAnimation = useAnimation();
   const { scrollY } = useScroll();
+
+  useEffect(() => {
+    if (scrollY.get() > 60) {
+      navAnimation.start({ backgroundColor: 'rgba(255,255,255,0.15)' });
+    }
+  }, []);
+
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (scrollY.get() > 60) {
       navAnimation.start({
@@ -12,13 +19,13 @@ const Header = () => {
       });
     } else {
       navAnimation.start({
-        backgroundColor: 'rgba(0,0,0,0)'
+        backgroundColor: 'transparent'
       });
     }
   });
 
   return (
-    <motion.nav className="header" animate={navAnimation} initial={{ backgroundColor: 'rgba(0,0,0,1)' }}>
+    <motion.nav className="header" animate={navAnimation}>
       <ul className="header-item">
         <li className="header-item-list">
           <a href="#home">Home </a>
@@ -31,9 +38,6 @@ const Header = () => {
         </li>
         <li className="header-item-list">
           <a href="#projects">Projects </a>
-        </li>
-        <li className="header-item-list">
-          <a href="#contact">Contact</a>
         </li>
       </ul>
     </motion.nav>
