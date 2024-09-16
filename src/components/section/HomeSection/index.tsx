@@ -36,14 +36,7 @@ const HomeSection = () => {
         <p className="profile-developer">Frontend Developer</p>
         <h1 className="profile-name">이혜미</h1>
         <p>I am interested in <span className="profile-text">WEB</span></p>
-        <div className="profile-contact-container">
-          <img src={Instagram} alt="" width={30} height={30}/>
-          <p>hyememi</p>
-        </div>
-        <div className="profile-contact-container">
-          <img src={Mail} alt="" width={30} height={30}/>
-          <p>hyemi7375@gmail.com</p>
-        </div>
+       
       </motion.div>
     </div>
    
@@ -51,3 +44,12 @@ const HomeSection = () => {
 };
 
 export default HomeSection;
+
+{/* <div className="profile-contact-container">
+<img src={Instagram} alt="" width={30} height={30}/>
+<p>hyememi</p>
+</div>
+<div className="profile-contact-container">
+<img src={Mail} alt="" width={30} height={30}/>
+<p>hyemi7375@gmail.com</p>
+</div> */}
