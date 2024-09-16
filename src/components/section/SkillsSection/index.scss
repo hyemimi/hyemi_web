@@ -21,10 +21,20 @@
 
     &-box {
       position: relative;
+      display: flex;
+      gap: 20px;
       align-items: center;
       padding: 50px;
       border: 3px solid #1C86EE;
       border-radius: 20px;
+
+      &:nth-child(5) {
+        border: 3px solid #ee6ddf;
+      }
+
+      &:nth-child(6) {
+        border: 3px solid #ee6ddf;
+      }
 
       &-title {
         position: absolute;
@@ -38,6 +48,24 @@
         transform: rotate(-15deg);
         transform-origin: left bottom;
       }
+
+      &-pinkTitle {
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        padding: 5px 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        background-color: #ee6ddf;
+        transform: rotate(-15deg);
+        transform-origin: left bottom;
+       
+      }
+    
+
+
+      
 
     }
   }
