@@ -40,3 +40,7 @@ button {
     background-color: $point-active-color; /* 클릭 시 가장 어두운 블루 */
   }
 }
+
+img {
+  cursor: pointer;
+}
