@@ -14,16 +14,16 @@ import youtube from 'assets/images/youtube.png';
 
 const projectItem = [
   { src: eclipse, title: eclipse_title, description: '대학생의 진로 걱정 해결을 위한 웹 서비스', role: 'WEB FRONTEND',
-    stack: ['react','tensorflow.js','css3']
+    stack: ['react','tensorflow.js','css3'], link: 'https://github.com/hyemimi/2022-khuthon/tree/main'
   },
   { src: farmin, title: farmin_title, description: '용인시 도시 텃밭 중개 및 도시 농부 육성 플랫폼', role: 'ANDROID FRONTEND',
-    stack: ['flutter']
+    stack: ['flutter'], link: 'https://github.com/hyemimi/014B-FE'
   },
   { src: studywithme, title: studywithme_title, description: '스터디 모임 관리 어플리케이션', role: 'FULLSTACK',
-    stack: ['flutter','node.js','mySQL']
+    stack: ['flutter','node.js','mySQL'], link: 'https://github.com/hyemimi/study_with_me'
   },
   { src: focus, title: focuz_title,description: '공부 집중 시간 측정 스터디 웹 서비스', role: 'WEB FRONTEND',
-    stack: ['react','tensorflow.js','css3']
+    stack: ['react','tensorflow.js','css3'], link: 'https://github.com/hyemimi/2022-DCom-Front-Focuz'
   }
 
 ];
@@ -53,6 +53,7 @@ const ProjectSection = () => {
                 {item.stack.map((skill) => 
                   <div key={item + skill} className="project-container-wrapper-textSection-skill-text">{skill}</div>
                 )}
+                <a href={item.link}><img src={github} width={30} height={30} /></a>
               </div>
             </div>
           </motion.div>
