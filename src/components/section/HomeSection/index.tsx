@@ -27,9 +27,9 @@ const HomeSection = () => {
         <Suspense fallback={null}>
           <Model url="/3d_clipart_-_webdev/scene.gltf" />
           <Text position={[-1.5, -1.7, 0]} fontSize={0.5} color="white" >
-            WEB DEVELOPER
+            Web developer
           </Text>
-          <Text position={[1.5, -2.7, 0]} fontSize={0.6} color="gold" >
+          <Text position={[1.5, -2.7, 0]} fontSize={0.6} color="mint" >
             HYEMI LEE
           </Text>
         </Suspense>
