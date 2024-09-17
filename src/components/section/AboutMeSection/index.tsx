@@ -1,6 +1,7 @@
 import { useScroll, useTransform, motion } from 'framer-motion';
 import './index.scss';
 import { useRef } from 'react';
+import profileImage from 'assets/images/hyemi.png';
 
 const AboutMeSection = () => {
 
@@ -10,26 +11,29 @@ const AboutMeSection = () => {
         whileInView={{ scale: 1.6 }} viewport={{ once: false }}
       >About Me</motion.h1>
       <div className="me-container-wrapper" >
-        <motion.div initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ 
-            opacity: 1,y: 0,
-            transition: { type: 'spring', duration: 0.5 } } }      
-          viewport={{ once: false }}>
-          저는 프론트엔드 개발자에요!
+        <motion.div className="profile-image-container" 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{
+            ease: 'easeInOut',
+            duration: 2,
+            x: { duration: 1 }
+          }}>
+          <img width={350} height={350} src={profileImage} />
         </motion.div>
-        <motion.div initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ 
-            opacity: 1,y: 0,
-            transition: { type: 'spring', duration: 0.5 } } }      
-          viewport={{ once: false }}>
-          저는 프론트엔드 개발자에요!
-        </motion.div>
-        <motion.div initial={{ opacity: 0, y: 50 }} 
-          whileInView={{ 
-            opacity: 1,y: 0,
-            transition: { type: 'spring', duration: 0.5 } } }      
-          viewport={{ once: false }}>
-          저는 프론트엔드 개발자에요!
+        <motion.div initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false }}
+          transition={{
+            ease: 'easeInOut',
+            duration: 2,
+            x: { duration: 1 }
+          }}>
+          <p className="profile-developer">Frontend Developer</p>
+          <h1 className="profile-name">이혜미</h1>
+          <p>I am interested in <span className="profile-text">WEB</span></p>
+        
         </motion.div>
       </div> 
     </div>

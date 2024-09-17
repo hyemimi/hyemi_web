@@ -1,45 +1,40 @@
+/* eslint-disable react/no-unknown-property */
 import profileImage from 'assets/images/hyemi.png';
 import './index.scss';
 import { motion, useScroll, useTransform, Variants } from 'framer-motion';
-import { useRef } from 'react';
-import Instagram from 'assets/images/instagram.png';
-import Mail from 'assets/images/gmail-light.png';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls, Stars, useGLTF, Text } from '@react-three/drei';  
+import { useRef, Suspense } from 'react';
+
+const Model = ( { url }: any) => {
+  const { scene } = useGLTF(url) as any;
+
+  scene.scale.set(0.6,0.6,0.6);
+
+  // eslint-disable-next-line react/no-unknown-property
+  return <primitive object={ scene } />;
+};
+
 const HomeSection = () => {
-  // const ref = useRef<any>();
-  // const { scrollYProgress } = useScroll({
-  //   target: ref
-  // });
-  
-  // const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
     <div className="profile" >
-      <motion.div className="profile-image-container" 
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: false }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 2,
-          x: { duration: 1 }
-        }}>
-        <img width={350} height={350} src={profileImage} />
-      </motion.div>
-      <motion.div initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: false }}
-        transition={{
-          ease: 'easeInOut',
-          duration: 2,
-          x: { duration: 1 }
-        }}>
-        <p className="profile-developer">Frontend Developer</p>
-        <h1 className="profile-name">이혜미</h1>
-        <p>I am interested in <span className="profile-text">WEB</span></p>
-       
-      </motion.div>
+      <Canvas>
+        <Stars />
+        <OrbitControls enableZoom={false} />
+        <ambientLight intensity={1} />
+        <directionalLight position={[5, 5, 5]} intensity={2} />
+        <Suspense fallback={null}>
+          <Model url="/3d_clipart_-_webdev/scene.gltf" />
+          <Text position={[-1.5, -1.7, 0]} fontSize={0.5} color="white" >
+            WEB DEVELOPER
+          </Text>
+          <Text position={[1.5, -2.7, 0]} fontSize={0.6} color="gold" >
+            HYEMI LEE
+          </Text>
+        </Suspense>
+      </Canvas>
     </div>
-   
   );
 };
 
