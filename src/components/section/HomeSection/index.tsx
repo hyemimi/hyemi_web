@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unknown-property */
-import profileImage from 'assets/images/hyemi.png';
 import './index.scss';
 import { motion, useScroll, useTransform, Variants } from 'framer-motion';
 import { Canvas, useFrame } from '@react-three/fiber';
@@ -12,14 +11,6 @@ const Model = ( { url }: any) => {
   const { scene } = useGLTF(url) as any;
 
   scene.scale.set(0.6,0.6,0.6); // 모델 크기 설정
-
-  // 부드러운 떠다니는 애니메이션 (react-three/fiber 의 useFrame 사용)
-  // useFrame((state) => {
-  //   const t = state.clock.getElapsedTime();
-  //   if (modelRef.current) {
-  //     modelRef.current.position.y = Math.sin(t * 1.5) * 0.2; // 주기와 범위를 조정하여 둥실둥실 효과
-  //   }
-  // });
 
   const clock = new THREE.Clock(); 
 
@@ -62,12 +53,3 @@ const HomeSection = () => {
 };
 
 export default HomeSection;
-
-{/* <div className="profile-contact-container">
-<img src={Instagram} alt="" width={30} height={30}/>
-<p>hyememi</p>
-</div>
-<div className="profile-contact-container">
-<img src={Mail} alt="" width={30} height={30}/>
-<p>hyemi7375@gmail.com</p>
-</div> */}
