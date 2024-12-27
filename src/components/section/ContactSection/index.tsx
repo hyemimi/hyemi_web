@@ -1,9 +1,7 @@
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './index.scss';
-import { useRef } from 'react';
 
 const ContactSection = () => {
-  const ref = useRef<any>();
 
   return (
     <div className="me-container" >

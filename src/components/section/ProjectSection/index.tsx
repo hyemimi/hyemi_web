@@ -1,6 +1,5 @@
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './index.scss';
-import { useRef } from 'react';
 import eclipse from 'assets/images/eclipse_home.jpg';
 import farmin from 'assets/images/FARMIN.png';
 import eclipse_title from 'assets/images/eclipse_title.png';
@@ -10,7 +9,6 @@ import studywithme_title from 'assets/images/studywithme_title.png';
 import focus from 'assets/images/FOCUS.png';
 import focuz_title from 'assets/images/focuz_title.png';
 import github from 'assets/images/github.png';
-import youtube from 'assets/images/youtube.png';
 
 const projectItem = [
   { src: eclipse, title: eclipse_title, description: '대학생의 진로 걱정 해결을 위한 웹 서비스', role: 'WEB FRONTEND',

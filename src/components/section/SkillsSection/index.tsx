@@ -1,14 +1,11 @@
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './index.scss';
-import { useRef } from 'react';
 import Js from 'assets/images/js.png';
-import Ts from 'assets/images/ts.png';
 import sass from 'assets/images/sass.png';
 import styled from 'assets/images/styled.png';
 import Flutter from 'assets/images/flutter.png';
 import ReactIcon from 'assets/images/react.png';
 import Electron from 'assets/images/electron.png';
-import Redux from 'assets/images/redux.png';
 
 const skillItem = [
   { src: Js, title: 'JavaScript' , description: 

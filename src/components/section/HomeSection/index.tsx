@@ -1,12 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import './index.scss';
-import { motion, useScroll, useTransform, Variants } from 'framer-motion';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stars, useGLTF, Text } from '@react-three/drei';  
 import { useRef, Suspense } from 'react';
 import * as THREE from 'three';
 
-const Model = ( { url }: any) => {
+const Model = ( { url }: any ) => {
   const modelRef = useRef<THREE.Group>();
   const { scene } = useGLTF(url) as any;
 

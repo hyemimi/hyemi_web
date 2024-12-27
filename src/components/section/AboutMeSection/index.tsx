@@ -1,9 +1,6 @@
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './index.scss';
-import { useRef } from 'react';
 import profileImage from 'assets/images/hyemi.png';
-import Gmail from 'assets/images/gmail-light.png';
-import Instagram from 'assets/images/instagram.png';
 const AboutMeSection = () => {
 
   return (
