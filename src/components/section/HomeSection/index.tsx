@@ -5,13 +5,9 @@ import { OrbitControls, Stars, useGLTF, Text } from '@react-three/drei';
 import { useRef, Suspense } from 'react';
 import * as THREE from 'three';
 
-interface IModelProps {
-  url: string;
-}
-
-const Model = ( { url }: IModelProps ) => {
+const Model = () => {
   const modelRef = useRef<THREE.Group>();
-  const { scene } = useGLTF(url) as { scene: THREE.Group };
+  const { scene } = useGLTF(`${process.env.PUBLIC_URL}/3d_clipart_-_webdev/scene.gltf`) as { scene: THREE.Group };
 
   scene.scale.set(0.6,0.6,0.6); // 모델 크기 설정
 
@@ -42,7 +38,7 @@ const HomeSection = () => {
         <ambientLight intensity={1} />
         <directionalLight position={[5, 5, 5]} intensity={2} />
         <Suspense fallback={null}>
-          <Model url="/3d_clipart_-_webdev/scene.gltf" />
+          <Model/>
           <Text position={[-1.5, -1.7, 0]} fontSize={0.5} color="white" >
             Wep developer
           </Text>

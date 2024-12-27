@@ -30,6 +30,8 @@ jobs:
       run: npm run build  # React 앱 빌드
 
     - name: Deploy to GitHub Pages
-      run: npm run deploy  # GitHub Pages에 배포
+      run: |
+        npx gh-pages -d build -r https://github.com/${{ github.repository }}.git -b gh-pages
       env:
         CI: false  # CI 환경에서 배포 시 GitHub Pages가 정상적으로 작동하도록 설정
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Personal Access Token을 환경 변수로 사용
