@@ -12,7 +12,7 @@ const Header = () => {
     }
   }, []);
 
-  useMotionValueEvent(scrollY, 'change', (latest) => {
+  useMotionValueEvent(scrollY, 'change', () => {
     if (scrollY.get() > 60) {
       navAnimation.start({
         backgroundColor: 'rgba(255,255,255,0.15)'

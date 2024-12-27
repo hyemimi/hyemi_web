@@ -5,9 +5,13 @@ import { OrbitControls, Stars, useGLTF, Text } from '@react-three/drei';
 import { useRef, Suspense } from 'react';
 import * as THREE from 'three';
 
-const Model = ( { url }: any ) => {
+interface IModelProps {
+  url: string;
+}
+
+const Model = ( { url }: IModelProps ) => {
   const modelRef = useRef<THREE.Group>();
-  const { scene } = useGLTF(url) as any;
+  const { scene } = useGLTF(url) as { scene: THREE.Group };
 
   scene.scale.set(0.6,0.6,0.6); // 모델 크기 설정
 
