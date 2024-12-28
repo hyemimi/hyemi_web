@@ -39,11 +39,8 @@ const HomeSection = () => {
         <directionalLight position={[5, 5, 5]} intensity={2} />
         <Suspense fallback={null}>
           <Model/>
-          <Text position={[-1.5, -1.7, 0]} fontSize={0.5} color="white" >
-            Wep developer
-          </Text>
-          <Text position={[1.5, -2.7, 0]} fontSize={0.6} color="mint" >
-            HYEMI LEE
+          <Text position={[0, -1.7, 0]} fontSize={0.4} color="white" >
+          Hi, welcome to Hyemi&apos;s playground!
           </Text>
         </Suspense>
       </Canvas>
