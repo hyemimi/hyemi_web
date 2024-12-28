@@ -20,7 +20,6 @@
   }
 
   &-text {
-    font-size: 30px;
     color: #f39034;
   }
 
@@ -31,8 +30,12 @@
   }
 
   &-icon {
-    margin-top: 20px;
+  
     color: #50606F;
+
+    &:first-child {
+      margin-top: 10px;
+    }
   }
 }
 
