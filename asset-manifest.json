@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.df29d72c.css",
-    "main.js": "/static/js/main.2f86ff89.js",
+    "main.css": "/static/css/main.7df4cb6e.css",
+    "main.js": "/static/js/main.eb29e6c6.js",
     "static/media/Pretendard-Bold.woff": "/static/media/Pretendard-Bold.f6866c5eb21ccb9a8749.woff",
     "static/media/Pretendard-SemiBold.woff": "/static/media/Pretendard-SemiBold.a0c72d6162af72df37ec.woff",
     "static/media/Pretendard-Regular.woff": "/static/media/Pretendard-Regular.ab56c53f21ca6b32d15f.woff",
@@ -11,8 +11,8 @@
     "static/media/FARMIN.png": "/static/media/FARMIN.eaa04c0b9aee21a7ffab.png",
     "static/media/Studywithme.png": "/static/media/Studywithme.3163e99c79cd6acbf3b0.png",
     "static/media/FOCUS.png": "/static/media/FOCUS.4268118925612892744c.png",
+    "static/media/hyemi.png": "/static/media/hyemi.841d973a0d2e71221241.png",
     "static/media/eclipse_home.jpg": "/static/media/eclipse_home.0c76f7be5c34b0bbc338.jpg",
-    "static/media/hyemi.png": "/static/media/hyemi.430a4a6b285d5191ea42.png",
     "static/media/styled.png": "/static/media/styled.1cf8b132a45d86b4f61f.png",
     "static/media/studywithme_title.png": "/static/media/studywithme_title.2105db3ad86e0b24438e.png",
     "static/media/eclipse_title.png": "/static/media/eclipse_title.f3ba5741f88a8e6740ab.png",
@@ -23,11 +23,11 @@
     "static/media/focuz_title.png": "/static/media/focuz_title.9822f3ec78fd9e98ec65.png",
     "static/media/electron.png": "/static/media/electron.3ad22139860574b4e8b2.png",
     "index.html": "/index.html",
-    "main.df29d72c.css.map": "/static/css/main.df29d72c.css.map",
-    "main.2f86ff89.js.map": "/static/js/main.2f86ff89.js.map"
+    "main.7df4cb6e.css.map": "/static/css/main.7df4cb6e.css.map",
+    "main.eb29e6c6.js.map": "/static/js/main.eb29e6c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.df29d72c.css",
-    "static/js/main.2f86ff89.js"
+    "static/css/main.7df4cb6e.css",
+    "static/js/main.eb29e6c6.js"
   ]
 }
