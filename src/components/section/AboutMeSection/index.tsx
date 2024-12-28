@@ -63,8 +63,8 @@ const AboutMeSection = () => {
               <span>| React, TypeScript</span>
             </div>
             <ul className="project-description">
-              <li>사용자의 입력이 문서에 어떻게 반영되는지 시각적인 피드백을 즉각적으로 보여주기 위해 노력하였습니다.</li>
-              <li>사용자로부터 정확한 형식의 데이터가 입력될 수 있도록 고민하였습니다.</li>
+              <li>- 사용자의 입력이 문서에 반영될 때마다 시각적인 피드백을 즉각적으로 보여주었습니다.</li>
+              <li>- 사용자로부터 정확한 형식의 데이터가 입력될 수 있도록 유효성 검사를 구성했습니다.</li>
             </ul>
           </div>
           <div className="project">
@@ -73,9 +73,9 @@ const AboutMeSection = () => {
               <span>| React, TypeScript, Electron</span>
             </div>
             <ul className="project-description">
-              <li>Gitlab runner를 사용하여 Gitlab CI/CD 파이프라인을 구축하고, 앱 실행 시 자동으로 버전 업데이트가 되도록 구현하였습니다.</li>
-              <li>사용자에 의해 화면이 줄어들면 사분할의 VIEW 영역이 같은 비율로 줄어들어 깨짐이 없도록 반응형 구현하였습니다.</li>
-              <li>관리자 웹 페이지를 포함하여 전체적인 UI 구성을 담당하였습니다.</li>
+              <li>- Gitlab runner를 사용하여 Gitlab CI/CD 파이프라인을 구축하고, 앱 실행 시 자동으로 버전 업데이트가 되도록 구현하였습니다.</li>
+              <li>- 사용자에 의해 화면이 줄어들면 사분할의 VIEW 영역이 같은 비율로 줄어들어 깨짐이 없도록 반응형 구현하였습니다.</li>
+              <li>- 어드민 웹 페이지를 포함하여 전체적인 UI 구성을 담당하였습니다.</li>
             </ul>
           </div>
         </div>
