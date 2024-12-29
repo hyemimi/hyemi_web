@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.7df4cb6e.css",
-    "main.js": "/static/js/main.eb29e6c6.js",
+    "main.css": "/static/css/main.6380d403.css",
+    "main.js": "/static/js/main.30042c13.js",
     "static/media/Pretendard-Bold.woff": "/static/media/Pretendard-Bold.f6866c5eb21ccb9a8749.woff",
     "static/media/Pretendard-SemiBold.woff": "/static/media/Pretendard-SemiBold.a0c72d6162af72df37ec.woff",
     "static/media/Pretendard-Regular.woff": "/static/media/Pretendard-Regular.ab56c53f21ca6b32d15f.woff",
     "static/media/Pretendard-Bold.woff2": "/static/media/Pretendard-Bold.0676c8838a37a3b770d8.woff2",
     "static/media/Pretendard-SemiBold.woff2": "/static/media/Pretendard-SemiBold.7e5eaaf650b9e7389913.woff2",
     "static/media/Pretendard-Regular.woff2": "/static/media/Pretendard-Regular.6090e6b5524796768e78.woff2",
+    "static/media/image.png": "/static/media/image.f23e56f7ccdb66b19ae1.png",
     "static/media/FARMIN.png": "/static/media/FARMIN.eaa04c0b9aee21a7ffab.png",
     "static/media/Studywithme.png": "/static/media/Studywithme.3163e99c79cd6acbf3b0.png",
     "static/media/FOCUS.png": "/static/media/FOCUS.4268118925612892744c.png",
@@ -23,11 +24,11 @@
     "static/media/focuz_title.png": "/static/media/focuz_title.9822f3ec78fd9e98ec65.png",
     "static/media/electron.png": "/static/media/electron.3ad22139860574b4e8b2.png",
     "index.html": "/index.html",
-    "main.7df4cb6e.css.map": "/static/css/main.7df4cb6e.css.map",
-    "main.eb29e6c6.js.map": "/static/js/main.eb29e6c6.js.map"
+    "main.6380d403.css.map": "/static/css/main.6380d403.css.map",
+    "main.30042c13.js.map": "/static/js/main.30042c13.js.map"
   },
   "entrypoints": [
-    "static/css/main.7df4cb6e.css",
-    "static/js/main.eb29e6c6.js"
+    "static/css/main.6380d403.css",
+    "static/js/main.30042c13.js"
   ]
 }
