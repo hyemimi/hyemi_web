@@ -17,7 +17,7 @@ const projectItem = [
   { src: clickclean, title: clickclean_title, description: '낚시성 기사 판독 및 클린기사 선별 뉴스 플랫폼', role: 'WEB FRONTEND',
     stack: ['react','typescript', 'react-query', 'styled-components'], link: 'https://github.com/hyemimi/Click-Clean?tab=readme-ov-file', 
     link2: 'https://www.youtube.com/watch?v=NlK-z6T368w',
-    content: '제목과 본문의 일치도를 판단하는 머신러닝 모델을 구축하여 기사의의 낚시성 확률을 계산합니다. 카카오 소셜 로그인이 가능하며 이메일 구독 및 북마크 등의 편의 기능을 제공합니다.'
+    content: '제목과 본문의 일치도를 판단하는 머신러닝 모델을 구축하여 기사의 낚시성 확률을 계산합니다. 카카오 소셜 로그인이 가능하며 이메일 구독 및 북마크 등의 편의 기능을 제공합니다. 모바일/태블릿/테스크탑 기기를 지원합니다.'
   },
   { src: eclipse, title: eclipse_title, description: '대학생의 진로 걱정 해결을 위한 웹 서비스', role: 'WEB FRONTEND',
     stack: ['react','css3'], link: 'https://github.com/hyemimi/2022-khuthon/tree/main', link2: 'https://www.youtube.com/watch?v=FJvAidjVZ7g',
